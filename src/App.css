@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+.app{
+    background-color: black;
+    color: white;
+    display: flex;
+    height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* main class in the quiz */
+ .main{
+    width: 75%;
+    /* setting the backgruond gradient */
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #020230), url('./Assets/bg.jpg');
+    display: flex;
+    flex-direction: column;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+ .top{
+   height: 50%;
+   position: relative;
+   
+ }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+ .timer{
+   width: 70px;
+   height: 70px;
+   border-radius: 60%;
+   border: 5px solid white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 700;
+   font-size: 30px;
+   position: absolute;
+   bottom: 10px;
+   left: 100px;
 
-.App-link {
-  color: #61dafb;
-}
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .bottom{
+   height: 50%;
+ }
+/* pyramid */
+
+ .pyramid{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+
+ }
+ .moneyList{
+    list-style: none;
+    width: 100%;
+    padding: 20px;
+ }
+
+ .moneyListItem{
+    display: flex;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+ }
+
+ .moneyListItemNumber{
+     font-size: 18px;
+     font-weight: 100;
+     width: 30%;
+ }
+
+ .moneyListItem.active{
+    background-color: teal;
+ }
+
+ .moneyListItemAmount{
+    font-size: 20px;
+    font-weight: 300;
+
+ }
+ 
+ .endText{
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+   position: relative;
+ }
